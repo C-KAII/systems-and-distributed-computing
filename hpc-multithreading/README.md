@@ -4,8 +4,6 @@
 
 Develop a distributed scientific computation service using a multi-threaded client-server system for high-performance computing (HPC). The server handles intensive mathematical operations on 32-bit integers and can process up to 12 concurrent requests using inter-process communication (IPC) and synchronisation techniques.
 
----
-
 ## Requirements
 
 ### General System Overview
@@ -64,8 +62,6 @@ Develop a distributed scientific computation service using a multi-threaded clie
   - Launches 3 sets of 10 threads, simulating 3 user requests.
   - Each thread returns 10 numbers with a random delay (10-100ms).
   - Progress output is disabled during the test.
-
----
 
 ## Full Program Requirements
 

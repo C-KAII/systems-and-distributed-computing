@@ -4,8 +4,6 @@
 
 This assignment involves developing a simple shell program in C that supports basic commands, emulating a command-line interface. The program should run in an endless loop, executing user input commands until the `quit` command is issued. The shell should be designed to work on Linux using Cygwin.
 
----
-
 ## Requirements
 
 ### Program Specifications
@@ -27,8 +25,6 @@ This assignment involves developing a simple shell program in C that supports ba
     - If a file doesn’t exist, print a "file not found" message.
   - **`get filename`**: Displays the file contents 30 lines at a time, pausing for user input between batches.
   - **`quit`**: Ends the program.
-
----
 
 ### Notes
 

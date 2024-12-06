@@ -8,8 +8,6 @@ Develop a simple remote execution system comprising two programs:
 
 The game, called **"Numbers"**, involves multi-player interactions through a network using a predefined protocol.
 
----
-
 ## System Overview
 
 ### Programs
@@ -34,8 +32,6 @@ game_client <Game Type> <Server Name> <Port Number>
 ```bash
 game_client numbers mypc 5555
 ```
-
----
 
 ## Game Protocol
 
@@ -64,8 +60,6 @@ game_client numbers mypc 5555
     MOVE 4
 2. **`QUIT`**: Informs the server the player is quitting. Sent only in response to a `GO` message.
 
----
-
 ## Game Rules: Numbers
 
 - The game starts with a total of 25.
@@ -88,8 +82,6 @@ game_client numbers mypc 5555
   TEXT ERROR Bad input. Try again:
   GO
 
----
-
 ## Error Handling
 
 - **Protocol Errors**:  
@@ -97,21 +89,15 @@ game_client numbers mypc 5555
 - **Game Errors**:  
   Errors result in `TEXT ERROR` messages. Players can retry, but after 5 consecutive errors, they are disconnected.
 
----
-
 ## Winning Conditions
 
 - A player wins by reducing the total to 0 or less.
 - If only one player remains, they win by default.
 
----
-
 ## Program Termination
 
 - The server terminates if no players remain or due to critical errors.
 - The client terminates after receiving an `END` message or upon a `QUIT` request.
-
----
 
 ## Example Commands
 
